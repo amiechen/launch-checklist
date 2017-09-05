@@ -1,15 +1,15 @@
 <template>
   <div class="site__title">
-    <h1>{{ msg }}</h1>
+    <h1>{{ name }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'title',
   data() {
     return {
-      msg: 'My Board',
+      name: 'Amie C.',
     };
   },
 };
@@ -18,7 +18,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  text-align: center;
+  color: rgba(118, 137, 182, 0.7);
+  font-weight: 900;
 }
 
 ul {
@@ -33,5 +34,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+.site__title {
+  padding-left: 2rem;
 }
 </style>
